@@ -88,6 +88,7 @@ int AF9838_Driver::probe()
 
 int AF9838_Driver::init()
 {
+	PX4_INFO("Voltafield af9838 (Release: 2026-05)");
 	PX4_INFO("AF9838: init() enter");
 
 	int ret = device::I2C::init();
